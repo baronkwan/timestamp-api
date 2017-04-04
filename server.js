@@ -55,6 +55,6 @@ app.get('/:date', (req, res) => {
 
 })
 
-app.listen(8080, () => {
-    console.log("You are listening to port 8080...")
+app.listen(process.env.PORT || 8080 , () => {
+    console.log(`You are listening to port ${process.env.PORT}...`)
 })
